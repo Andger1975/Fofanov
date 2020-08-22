@@ -1,0 +1,6 @@
+Name|Phone
+John;1234
+Bob;5678
+Aliace;9432
+Gera;1975
+Tonya;5628
