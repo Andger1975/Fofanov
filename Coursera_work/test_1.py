@@ -1,2 +1,5 @@
-n = int(input())
-print(2 ** n)
+sek = int(input())
+sec = str(sek % 60 // 10) + str(sek % 60 % 10)
+minuta = str(sek // 60 % 60 // 10) + str(sek // 60 % 10)
+hour = str(sek // 60 // 60 % 24)
+print(hour, minuta, sec, sep=':')
