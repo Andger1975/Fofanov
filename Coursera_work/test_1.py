@@ -1,5 +1,5 @@
-sek = int(input())
-sec = str(sek % 60 // 10) + str(sek % 60 % 10)
-minuta = str(sek // 60 % 60 // 10) + str(sek // 60 % 10)
-hour = str(sek // 60 // 60 % 24)
-print(hour, minuta, sec, sep=':')
+A = int(input())
+B = int(input())
+rev_1 = 0 ** (B // (A + 1)) * A
+rev_2 = 0 ** (A // B) * B
+print(rev_1 + rev_2)
