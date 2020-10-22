@@ -1,8 +1,7 @@
-A = int(input())
-B = int(input())
-C = int(input())
-D = int(input())
-if A - 1 <= C <= A + 1 and B - 1 <= D <= B + 1:
-    print("Yes")
+n = int(input())
+m = int(input())
+k = int(input())
+if k <= (m * n) and (k % m == 0 or k % n == 0):
+    print("YES")
 else:
-    print("No")
+    print("NO")
