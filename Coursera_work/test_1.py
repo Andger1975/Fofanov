@@ -1,7 +1,8 @@
 n = int(input())
-m = int(input())
-k = int(input())
-if k <= (m * n) and (k % m == 0 or k % n == 0):
-    print("YES")
+ost = n % 10
+if 10 <= n <= 20 or ost >= 5 or ost == 0:
+    print(n, 'korov')
+elif n % 10 == 1:
+    print(n, 'korova')
 else:
-    print("NO")
+    print(n, 'korovy')
