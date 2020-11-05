@@ -1,8 +1,8 @@
-now = int(input())
-# maxNum = 1
-
-while i  now:
-    print(i)
-    maxNum = maxNum + 1
-    i = maxNum ** 2
-print()
+N = int(input())
+i = 1
+while i < N:
+    i = i * 2
+if i == N:
+    print('YES')
+else:
+    print('NO')
