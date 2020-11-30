@@ -1,8 +1,14 @@
-N1 = int(input())
-N2 = 0
-while N1 > 0:
-    digit = N1 % 10
-    N1 = N1 // 10
-    N2 = N2 * 10
-    N2 = N2 + digit
-print(N2)
+K = int(input())
+number = K
+counterNumber = 0
+Flip = 0
+while K != 0:
+    while number > 0:
+        Flip = Flip * 10 + number % 10
+        number //= 10
+    if Flip == K:
+        counterNumber += 1
+    Flip = 0
+    K -= 1
+    number = K
+print(counterNumber)
