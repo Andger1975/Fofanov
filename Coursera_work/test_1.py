@@ -1,14 +1,16 @@
-K = int(input())
-number = K
-counterNumber = 0
-Flip = 0
-while K != 0:
-    while number > 0:
-        Flip = Flip * 10 + number % 10
-        number //= 10
-    if Flip == K:
-        counterNumber += 1
-    Flip = 0
-    K -= 1
-    number = K
-print(counterNumber)
+k = -1
+owerK = k
+sumK = 0
+nowK = 0
+while k != 0:
+    k = int(input())
+    if k == owerK:
+        nowK += 1
+    elif k != owerK:
+        owerK = k
+        if nowK > sumK:
+            sumK = nowK
+            nowK = 1
+        else:
+            nowK = 1
+print(sumK)
